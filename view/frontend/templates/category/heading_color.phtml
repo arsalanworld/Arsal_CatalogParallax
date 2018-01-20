@@ -1,0 +1,23 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ */
+?>
+<?php
+$_category  = $block->getCurrentCategory();
+$_headingColor   = '';
+if ($_headingColor = $_category->getRitzyParallaxHeadingColor()) {
+    /* @escapeNotVerified */ echo __('<div id="category-parallax-heading-color" style="display: none;">%1</div>',$_headingColor);
+}
+?>

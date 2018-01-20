@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sortOrder" xsi:type="number">0</item>
+            </item>
+        </argument>
+    </fieldset>
+    <fieldset name="content">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sortOrder" xsi:type="number">10</item>
+            </item>
+        </argument>
+        <field name="ritzy_parallax_image">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">30</item>
+                    <item name="source" xsi:type="string">category</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="formElement" xsi:type="string">fileUploader</item>
+                    <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
+                    <item name="previewTmpl" xsi:type="string">Magento_Catalog/image-preview</item>
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="label" xsi:type="string" translate="true">Ritzy Parallax Image</item>
+                    <item name="uploaderConfig" xsi:type="array">
+                        <item name="url" xsi:type="url" path="catalogparallax/category_parallax/upload"/>
+                    </item>
+                </item>
+            </argument>
+        </field>
+        <field name="ritzy_parallax_heading_color">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">35</item>
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="label" xsi:type="string" translate="true">Parallax Heading Color</item>
+                    <item name="notice" xsi:type="string" translate="true">Pick Suitable Color for catalog heading over parallax. Default is "#ffffff(white)"</item>
+                    <item name="component" xsi:type="string">Arsal_CatalogParallax/js/view/form/elements/parallax/heading_color</item>
+                </item>
+            </argument>
+        </field>
+        <field name="ritzy_parallax_position">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">38</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="label" xsi:type="string" translate="true">Parallax Position</item>
+                    <item name="notice" xsi:type="string" translate="true">Provide position of parallax image e.g right -10px. If empty Default Value is "center center"</item>
+                </item>
+            </argument>
+        </field>
+
+
+    </fieldset>
+</form>
